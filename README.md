@@ -1,7 +1,8 @@
 # webhtml
 keep learning.
 
-============================
+<pre>
+============================http://localhost/webhtml/
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,3 +20,4 @@ keep learning.
 </body>
 </html>
 ============================
+</pre>

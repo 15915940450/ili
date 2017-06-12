@@ -12,5 +12,44 @@
 <div id="container">
 
 </div>
+<script type="text/javascript">
+var arr=[0,1,4,5,9];
+// 測試slice(0,0),slice(2)
+// var arr2=[99];
+// var arr3=arr2.slice(2);
+// console.log(arr3);
+
+// var obj={
+//   v:4,
+//   l:[0,1],
+//   r:[5,9]
+// };
+//取中間為v
+function BST(arr){
+  var arrLen=arr.length;
+  var centerKey=Math.floor(arrLen/2);
+  var obj={
+    v:arr[centerKey],
+    l:arr.slice(0,centerKey),
+    r:arr.slice(centerKey+1)
+  };
+  if(arrLen===2){ //[0,1]==>{v:1,l:[0],r:[]}
+    obj.l=BST(obj.l);
+    delete obj.r;
+    return obj;
+  }else if(arrLen===1){ //[0]==>{v:0,l:[],r:[]}
+    delete obj.l;
+    delete obj.r;
+    return obj;
+  }else{  //[1,5,9]==>{v:5,l:[1],r:[9]}
+    obj.l=BST(obj.l);
+    obj.r=BST(obj.r);
+    return obj;
+  }
+}
+
+var obj=BST(arr);
+console.log(JSON.stringify(obj));
+</script>
 </body>
 </html>
