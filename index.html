@@ -27,7 +27,8 @@ function BST(arr){
   }
   var numCenterKey=Math.floor(numArrLen/2); /*中键*/
   var obj={
-    v:arr[numCenterKey],
+    v:arr[numCenterKey]
+    // v:arr[numCenterKey],
     // l:arr.slice(0,numCenterKey),
     // r:arr.slice(numCenterKey+1)
   };
@@ -40,14 +41,15 @@ function BST(arr){
     //[1,5,9]==>{v:5,l:[1],r:[9]}
     //分治思想，递归调用BST
     //T(n)=2T(n/2)+O(1)
-    //CASE1(a=2,b=2,ε=1)(http://baike.baidu.com/link?url=l_CDLecR13m1qijEF2WzleUBvJsRVI7psBOyi-2ipL2CZEcccMYaWsvasxATT67UrOlE9TLQrZjYSFE97kEGvCiIj37yGt0Mjhn0lFvmDGeMh10ucbUntpgFGYimdbCF)
+    //CASE1(a=2,b=2,ε=1)
+    //( 主定理 ==> http://baike.baidu.com/link?url=l_CDLecR13m1qijEF2WzleUBvJsRVI7psBOyi-2ipL2CZEcccMYaWsvasxATT67UrOlE9TLQrZjYSFE97kEGvCiIj37yGt0Mjhn0lFvmDGeMh10ucbUntpgFGYimdbCF )
     obj.l=BST(arr.slice(0,numCenterKey));
     obj.r=BST(arr.slice(numCenterKey+1));
     //obj.l=BST(obj.l);
     //obj.r=BST(obj.r);
   }
   //=====================================================
-  return obj;
+  return obj; //此时的numArrLen等于1（默认情况），因此，数组长度0,1,2,>=3的所有可能情况都考虑到了
 }
 
 var obj=BST(arr);
