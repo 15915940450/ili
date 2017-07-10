@@ -1,68 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BST</title>
+<title>client</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 <meta name="author" content="Thilina Fong" />
 <meta name="description" content="svn://.76.78.224/webhtml(http://.76.78.224:96)" />
 </head>
+
 <body>
 <div id="container">
-
+ip,ua,cw
 </div>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript">
-var arr=[1,5,9,10,20,30,50];
-// for(var i=0;i<1e2;i++){
-//   arr[i]=i;
-// }
-//时间复杂度：O(n)
-//空间复杂度：O(n)
-function BST(arr){
-  var numArrLen=arr.length;
-  //特例：当为空数组时
-  if(numArrLen===0){
-    return {};
-  }
-  var numCenterKey=Math.floor(numArrLen/2); /*中键*/
-  var obj={
-    v:arr[numCenterKey]
-    // v:arr[numCenterKey],
-    // l:arr.slice(0,numCenterKey),
-    // r:arr.slice(numCenterKey+1)
-  };
-  //=====================================================
-  if(numArrLen===2){ //[1,4]==>{v:4,l:[1],r:[]}
-    obj.l=BST(arr.slice(0,numCenterKey));
-    // delete obj.r;
-  }else if(numArrLen>2){
-    //[1,4,5,9]==>{v:5,l:[1,4],r:[9]}
-    //[1,5,9]==>{v:5,l:[1],r:[9]}
-    //分治思想，递归调用BST
-    //T(n)=2T(n/2)+O(1)
-    //CASE1(a=2,b=2,ε=1)
-    //( 主定理 ==> http://baike.baidu.com/link?url=l_CDLecR13m1qijEF2WzleUBvJsRVI7psBOyi-2ipL2CZEcccMYaWsvasxATT67UrOlE9TLQrZjYSFE97kEGvCiIj37yGt0Mjhn0lFvmDGeMh10ucbUntpgFGYimdbCF )
-    obj.l=BST(arr.slice(0,numCenterKey));
-    obj.r=BST(arr.slice(numCenterKey+1));
-    //obj.l=BST(obj.l);
-    //obj.r=BST(obj.r);
-  }
-  //=====================================================
-  return obj; //此时的numArrLen等于1（默认情况），因此，数组长度0,1,2,>=3的所有可能情况都考虑到了
-}
-
-var obj=BST(arr);
-console.log(JSON.stringify(obj));
-// 中序遍历
-function inorder(obj){
-  if(obj){
-    inorder(obj.l);
-    console.log(obj.v);
-    inorder(obj.r);
-  }
-}
-inorder(obj); //是否按顺序输出来检查算法正确与否
+//document.write(returnCitySN["cip"]+','+returnCitySN["cname"])
+var objSohuC=returnCitySN;
+var ip=objSohuC.cip;
+console.log(objSohuC);
+console.log(typeof ip);
+console.log(ip);
 </script>
 </body>
 </html>
