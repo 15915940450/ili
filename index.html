@@ -11,7 +11,7 @@
 
 <body>
 <div id="container">
-ip,ua,cw
+ip,ua,cw,ch,sw,sh,isInternetExplorer
 </div>
 <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript">
@@ -19,8 +19,33 @@ ip,ua,cw
 var objSohuC=returnCitySN;
 var ip=objSohuC.cip;
 console.log(objSohuC);
-console.log(typeof ip);
 console.log(ip);
+console.log(typeof ip);
+
+var ua=window.navigator.userAgent;
+console.log(ua);
+console.log(typeof ua);
+
+var cw=document.documentElement.clientWidth || document.body.clientWidth;
+console.log(cw);
+console.log(typeof cw);
+
+var ch=document.documentElement.clientHeight || document.body.clientHeight;
+console.log(ch);
+console.log(typeof ch);
+
+var sw=window.screen.width;
+console.log(sw);
+console.log(typeof sw);
+
+var sh=window.screen.height;
+console.log(sh);
+console.log(typeof sh);
+
+var isInternetExplorer=Boolean(window.ActiveXObject || "ActiveXObject" in window);
+console.log(isInternetExplorer);
+// Internet Explorer
+// Microsoft Edge(Edge)
 </script>
 </body>
 </html>
