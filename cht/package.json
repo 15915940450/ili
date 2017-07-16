@@ -1,0 +1,35 @@
+{
+  "name": "traditionalized",
+  "version": "0.3.0",
+  "homepage": "",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "author": {
+    "name": "Thilina Fong",
+    "email": "vimer@gmail.com",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjeastmond/gulp-ext-replace.git"
+  },
+  "keywords": [
+    "extension",
+    "file",
+    "traditionalized",
+    "gulp",
+    "util",
+    "extensions"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "through2": "~2.0.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "~3.9.1"
+  }
+}
