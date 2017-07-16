@@ -1,5 +1,5 @@
 " ------------------------------
-" Name: vimrc for windows
+" Name: vimrc for windows(C:\Users\18cun)
 " Author:vimer
 " Email: vimer@gmail.com
 " ------------------------------
@@ -209,7 +209,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
 " }}}
 " ----- Markdown ----- {{{
-" Plugin 'plasticboy/vim-markdown'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 " }}}
 " ----- Ctrlp ----- {{{
 Plugin 'kien/ctrlp.vim'
@@ -245,3 +246,5 @@ function! RemoveTrailingWhitespace()
 endfunction
 autocmd BufWritePre * call RemoveTrailingWhitespace()
 " }}}
+
+" 2017-07-16 周日 01:27 下午
