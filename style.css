@@ -1,9 +1,0 @@
-.test{
-  background:red url([[img/demo75_75.jpg) no-repeat 0 0;
-  height: 75px;
-}
-@media (max-width:900px) {
-  .test{
-    background: blue url([[img/qiqi.jpg) no-repeat 0 0;
-  }
-}
