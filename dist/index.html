@@ -10,9 +10,11 @@
 </head>
 <body>
 <div id="container">
-  <h3>{{total}}</h3>
-  <counter-component m-on:it="incrementTotal"></counter-component>
-  <counter-component m-on:it="incrementTotal"></counter-component>
+  <slot-component>
+    <h1 slot="container__h1">hello, my name is {{myname}}</h1>
+    <p slot="container__p">I love FE.</p>
+    <h6 slot="container__h6">{{time}}</h6>
+  </slot-component>
 </div>
 <script src="bundle.js" charset="utf-8"></script>
 </body>
