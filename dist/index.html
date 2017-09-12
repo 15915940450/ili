@@ -10,8 +10,9 @@
 </head>
 <body>
 <div id="container">
-  <counter-component></counter-component>
-  <counter-component></counter-component>
+  <h3>{{total}}</h3>
+  <counter-component m-on:it="incrementTotal"></counter-component>
+  <counter-component m-on:it="incrementTotal"></counter-component>
 </div>
 <script src="bundle.js" charset="utf-8"></script>
 </body>
