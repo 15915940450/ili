@@ -1,13 +1,22 @@
 const Moon=require('moonjs');
-// console.log(Moon.version);  //0.11.0
-new Moon({
-  el:'#container',
-  data:{
-    phoneNumber:15816277995
+
+Moon.component('counter-component',{
+  data:function(){
+    return {
+      count:15816277995
+    };
   },
   methods:{
     increment:function(){
-      this.set('phoneNumber',this.get('phoneNumber')+1);
+      this.set('count',this.get('count')+1);
     }
-  }
+  },
+  template:`<div>
+    <p>Count: {{count}}</p>
+    <button m-on:click="increment">Increment</button>
+  </div>`
+});
+
+new Moon({
+  el:'#container'
 });
