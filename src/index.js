@@ -1,8 +1,8 @@
-const Moon = require('moonjs');
-// console.log(_);
+const Moon=require('moonjs');
+
 new Moon({
   el:'#container',
   data:{
-    msg:'hello Moon!'
+    phoneNumber:15816277995
   }
 });
