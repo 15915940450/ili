@@ -7,14 +7,31 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 <meta name="author" content="Thilina Fong" />
 <meta name="description" content="" />
-<script src="./moon.min.js" charset="utf-8"></script>
 </head>
 <body>
 <div id="container">
-  <ul>
-    <li m-for="item in list">{{item}}</li>
-  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>序列号</th>
+        <th>Mac地址</th>
+        <th>出厂日期</th>
+        <th>地区</th>
+        <th>状态</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr m-for="bike in objAllEBike">
+        <td>{{bike.sn}}</td>
+        <td>{{bike.mac}}</td>
+        <td>{{bike.date}}</td>
+        <td>{{bike.area}}</td>
+        <td>{{bike.state}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+<script src="moon.min.js" charset="utf-8"></script>
 <script src="bundle.js" charset="utf-8"></script>
 </body>
 </html>
