@@ -3,6 +3,7 @@ module.exports = {
       "browser": true,
       "jquery":true,
       "commonjs":true,
+      "node": true,
       "es6": true
     },
     "globals":{

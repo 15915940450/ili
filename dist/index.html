@@ -7,14 +7,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 <meta name="author" content="Thilina Fong" />
 <meta name="description" content="" />
+<script src="./moon.min.js" charset="utf-8"></script>
 </head>
 <body>
 <div id="container">
-  <slot-component>
-    <h1 slot="container__h1">hello, my name is {{myname}}</h1>
-    <p slot="container__p">I love FE.</p>
-    <h6 slot="container__h6">{{time}}</h6>
-  </slot-component>
+  <ul>
+    <li m-for="item in list">{{item}}</li>
+  </ul>
 </div>
 <script src="bundle.js" charset="utf-8"></script>
 </body>
