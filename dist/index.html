@@ -7,6 +7,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 <meta name="author" content="Thilina Fong" />
 <meta name="description" content="" />
+<style media="screen">
+.info{
+  color:green;
+}
+.red{
+  color: red;
+}
+.blue{
+  color:blue;
+}
+</style>
 </head>
 <body>
 <div id="container">
@@ -25,8 +36,8 @@
         <td>{{bike.sn}}</td>
         <td>{{bike.mac}}</td>
         <td>{{bike.date}}</td>
-        <td>{{bike.area}}</td>
-        <td>{{bike.state}}</td>
+        <td m-literal:class="{red: (bike.state==='有故障'), blue: (bike.state==='已出库'), info: (bike.state==='已入库')}">{{bike.area}}</td>
+        <td class="info">{{bike.state}}</td>
       </tr>
     </tbody>
   </table>
