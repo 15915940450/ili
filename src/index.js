@@ -1,3 +1,5 @@
+global.Moon = require('moonjs');
+
 new Moon({
   el:'#container',
   data:{

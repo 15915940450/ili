@@ -7,8 +7,7 @@ module.exports = {
       "es6": true
     },
     "globals":{
-      "Moon":true,
-      "__dirname":true
+      "Moon":true
     },
     "extends": "eslint:recommended",
     "rules": {
