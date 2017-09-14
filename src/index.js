@@ -1,31 +1,34 @@
-const Moon=require('moonjs');
+global.Moon=require('moonjs');
+const MoonRouter=require('moon-router');
+Moon.use(MoonRouter);
 
-Moon.component('count-component',{
-  data:function(){
-    return {
-      numCount:10
-    };
-  },
-  methods:{
-    increase:function(){
-      this.set('numCount',this.get('numCount')+1);
-      this.emit('componenteventit');
-    }
-  },
-  template:`<div>
-    <p>count:{{numCount}}</p>
-    <a href="javascript:;" m-on:click="increase">Increment</a>
+const router=new MoonRouter({
+  default:'/',
+  map:{
+    '/':'root',
+    '/hello':'hello'
+  }
+});
+
+
+
+
+Moon.component('root', {
+  template: `<div>
+    <h1>Welcome to "/"</h1>
+    <router-link to="/hello">To /hello</router-link>
   </div>`
 });
 
+Moon.component('hello', {
+  template: `<div>
+    <h1>You have Reached "/hello"</h1>
+    <router-link to="/">Back Home</router-link>
+  </div>`
+});
+
+
 new Moon({
   el:'#container',
-  data:{
-    numTotalCount:20
-  },
-  methods:{
-    increaseTotal:function(){
-      this.set('numTotalCount',this.get('numTotalCount')+1);
-    }
-  }
+  router:router
 });
