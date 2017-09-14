@@ -1,26 +1,31 @@
-global.Moon = require('moonjs');
+const Moon=require('moonjs');
+
+Moon.component('count-component',{
+  data:function(){
+    return {
+      numCount:10
+    };
+  },
+  methods:{
+    increase:function(){
+      this.set('numCount',this.get('numCount')+1);
+      this.emit('componenteventit');
+    }
+  },
+  template:`<div>
+    <p>count:{{numCount}}</p>
+    <a href="javascript:;" m-on:click="increase">Increment</a>
+  </div>`
+});
 
 new Moon({
   el:'#container',
   data:{
-    objAllEBike:[{
-      sn:100121,
-      mac:'09-54-11-2d-c5-22',
-      date:'2017-9-30',
-      area:'宝安',
-      state:'已入库'
-    },{
-      sn:100126,
-      mac:'09-54-11-2d-c5-26',
-      date:'2017-9-26',
-      area:'南山',
-      state:'已出库'
-    },{
-      sn:100129,
-      mac:'09-54-11-2d-c5-29',
-      date:'2017-9-29',
-      area:'龙岗',
-      state:'有故障'
-    }]
+    numTotalCount:20
+  },
+  methods:{
+    increaseTotal:function(){
+      this.set('numTotalCount',this.get('numTotalCount')+1);
+    }
   }
 });
