@@ -1,11 +1,17 @@
-// var $=require('jquery');
+global.Moon=require('moonjs');
 
-// console.log($('.fooTable').jquery);
-// console.log($());
-
-$('.fooTable').footable({
-  filtering:{
-    enabled:true,
-    container:'#filter'
+var test=new Moon({
+  el:'#container',
+  data:{
+    msg:99
+  },
+  computed:{
+    msg2:{
+      get:function(){
+        return this.get('msg')+6;
+      }
+    }
   }
 });
+
+test.set('msg',969);
