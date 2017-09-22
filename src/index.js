@@ -1,17 +1,3 @@
-global.Moon=require('moonjs');
+var _=require('lodash');
 
-var test=new Moon({
-  el:'#container',
-  data:{
-    msg:99
-  },
-  computed:{
-    msg2:{
-      get:function(){
-        return this.get('msg')+6;
-      }
-    }
-  }
-});
-
-test.set('msg',969);
+console.log(_.chunk([1,2,3,5,9,9,90,999,66,6],3));
