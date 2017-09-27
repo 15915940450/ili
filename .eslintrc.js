@@ -8,6 +8,7 @@ module.exports = {
     },
     "globals":{
       "_":true,
+      "echarts":true,
       "Moon":true
     },
     "extends": "eslint:recommended",
