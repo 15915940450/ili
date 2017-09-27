@@ -1,8 +1,14 @@
-window.Moon=require('moonjs');
+const $=require('jquery');
+const Mock=require('mockjs');
 
-new Moon({
-  el:'#moon-model',
-  data:{
-    msg:'Hello Moon!(model)'
-  }
+Mock.mock('http://mockjs',{
+  'list|1-5':[{
+    'id|+1':1,
+    'hhj':'@name()',
+    'age|1-100':100
+  }]
+});
+
+$.get('http://mockjs').done(function(data){
+  console.log(data);
 });
