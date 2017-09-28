@@ -9,6 +9,7 @@ module.exports = {
     "globals":{
       "_":true,
       "echarts":true,
+      "Mock":true,
       "Moon":true
     },
     "extends": "eslint:recommended",
