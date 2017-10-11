@@ -1,6 +1,7 @@
 // first screen
 .go__first-screen{
-  padding-top: 10px;
+  padding-top: 30px;
+  background:#FFF;
 }
 .go__h1_logo{
   background: url('./96.png') no-repeat center 0;
@@ -16,14 +17,88 @@
   position: relative;
   top:90px;
 }
+
+.go__go-bg{
+  // background:#000 url('d-0.jpg') no-repeat center 0;
+  // background-size: cover;
+  // height: 440px;
+  // padding-top: 50px;
+}
 .go__h2_slogan{
   text-align: center;
   font-size: 8.8vw;
+  font-weight: 500;
+  color: #333;
+}
+.go__version{
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+.go__a_download{
+  display: block;
+  font-size: 16px;
+  padding: 8px 0;
+  width: 220px;
+  text-align: center;
+  margin: 30px auto 0;
+  background: #b13c00;
+  color: #FFF;
+  border-radius: 100px;
+  letter-spacing: 5px;
 }
 
-
-
-
+.go__screen{
+  width: auto;
+  margin-left: 12px;
+  margin-right: 15px;
+  padding-bottom: 30px;
+}
+.go__screenshot{
+  width: 100%;
+  overflow: auto;
+  height: 440px;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.go__screenshot ul{
+  width: 880px;
+  height: 330px;
+}
+.go__screenshot li{
+  float: left;
+  width: 200px;
+  margin: 10px;
+}
+.go__screenshot li img{
+}
+.go__introduce{
+  margin-top: 20px;
+}
+.go__introduce p{
+  font-size: 13px;
+  margin-top: 5px;
+}
+p.go__update{
+  color: #666;
+  margin-top: 15px;
+  font-size: 12px;
+}
+p.go__update-content{
+  color: #333;
+  font-size: 12px;
+}
+footer{
+  background: #333;
+  text-align: center;
+  color: #AAA;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.go__footer-a_download{
+  margin-bottom: 30px;
+  background: #ff7e3b;
+}
 
 
 
