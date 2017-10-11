@@ -9,7 +9,7 @@ module.exports = {
   module:{
     rules:[
       {
-        test:/\.scss$/,
+        test:/\.(scss|css)$/,
         use:[{
           loader:'style-loader'
         },{
@@ -23,7 +23,13 @@ module.exports = {
             sourceMap:true
           }
         }]
-      }  //scss
+      },  //scss
+      {
+        test:/\.(png|svg|jpg|gif)$/,
+        use:[
+          'file-loader'
+        ]
+      }
     ]
   },
   output: {

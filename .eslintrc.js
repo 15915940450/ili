@@ -19,5 +19,8 @@ module.exports = {
       "comma-dangle": ["error", "never"],
       "eqeqeq": ["error", "always"],
       "quotes": ["error", "single"]
+    },
+    "parserOptions": {
+      "sourceType": "module"
     }
 };
