@@ -1,3 +1,6 @@
+.go{
+  max-width: 400px;
+}
 // first screen
 .go__first-screen{
   padding-top: 30px;
@@ -49,9 +52,9 @@
 }
 
 .go__screen{
-  width: auto;
-  margin-left: 12px;
-  margin-right: 15px;
+  width: 100%;
+  // margin-left: 12px;
+  // margin-right: 15px;
   padding-bottom: 30px;
 }
 .go__screenshot{
@@ -74,6 +77,7 @@
 }
 .go__introduce{
   margin-top: 20px;
+  padding: 0 12px;
 }
 .go__introduce p{
   font-size: 13px;
