@@ -1,4 +1,6 @@
-online
+/online
+/dist
+!/dist/index.html
 #===============================================
 # Logs
 logs
