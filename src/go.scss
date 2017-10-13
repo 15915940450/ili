@@ -1,4 +1,5 @@
 $goColor:#A13A00;
+$ccBikeColor:#13937f;
 
 .go{
   // max-width: 400px;
@@ -15,6 +16,15 @@ $goColor:#A13A00;
   background-size: 80px;
   text-align: center;
   font-size: 20px;
+}
+.ccbike__h1_logo{
+  background: url('./ccbike.png') no-repeat center 0;
+  width: 100%;
+  height: 190px;
+  background-size: 80px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
 }
 .go__mark_logo{
   font-weight: 500;
@@ -33,7 +43,32 @@ $goColor:#A13A00;
   text-align: center;
   font-size: 8.8vw;
   font-weight: 500;
-  color: #333;
+  color: #222;
+}
+.ccbike__additional-information{
+  display: block;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  width: 79%;
+  margin: 0 auto;
+  color: #393939;
+}
+.ccbike__center-line{
+  border-bottom: 1px solid #000;
+  -webkit-box-flex:1;
+  display: block;
+  width: 32%;
+  height: calc(70vw * 0.36 / 5 / 1.5);
+}
+.ccbike__span_additional-information{
+  -webkit-box-flex:1;
+  display: block;
+  width: 36%;
+  height: 1em;
+  line-height: 1em;
+  font-size: calc(70vw * 0.36 / 5);
+  font-weight: 500;
 }
 .go__version{
   text-align: center;
@@ -52,7 +87,18 @@ $goColor:#A13A00;
   border-radius: 100px;
   letter-spacing: 5px;
 }
-
+.ccbike__a_download{
+  display: block;
+  font-size: 16px;
+  padding: 8px 0;
+  width: 220px;
+  text-align: center;
+  margin: 30px auto 0;
+  background: $ccBikeColor;
+  color: #FFF;
+  border-radius: 100px;
+  letter-spacing: 5px;
+}
 .go__screen{
   width: 100%;
   // margin-left: 12px;
@@ -93,6 +139,12 @@ p.go__update{
 p.go__update-content{
   color: #333;
   font-size: 12px;
+}
+.ccbike__out{
+
+}
+.ccbike__can li{
+  margin: 5px 0px 5px 10px;
 }
 footer{
   background: #333;

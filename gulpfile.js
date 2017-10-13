@@ -14,7 +14,7 @@ gulp.task('gImagemin',function(){
 });
 
 gulp.task('gHtmlmin',function(){
-  gulp.src(['./dist/index.html'])
+  gulp.src(['./dist/*.html'])
     .pipe(htmlReplace({
       script:'bundle.min.js'+version
     }))
