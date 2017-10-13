@@ -1,7 +1,7 @@
 var gulp=require('gulp');
 var imagemin=require('gulp-imagemin');
 var htmlmin=require('gulp-htmlmin');
-var version='?v=1.5.9';
+var version='?v=2.0.0';
 var htmlReplace=require('gulp-html-replace');
 var uglify=require('gulp-uglify');
 var pump=require('pump');

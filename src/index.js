@@ -49,6 +49,14 @@ window.onload=function(){
       }
     };
   }
+
+//隱藏加載動畫
+  function whenLoadComplete(){
+    document.querySelector('.go-load-10').style.display='none';
+  }
+  window.setTimeout(function(){
+    whenLoadComplete();
+  },1100);
 };
 
 
