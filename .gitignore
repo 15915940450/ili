@@ -1,7 +1,6 @@
 /online
 /dist
-!/dist/ccbike.html
-!/dist/index.html
+!/dist/*.html
 #===============================================
 # Logs
 logs
