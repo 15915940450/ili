@@ -55,11 +55,12 @@ $ccBikeColor:#13937f;
   color: #393939;
 }
 .ccbike__center-line{
-  border-bottom: 1px solid #393939;
+  background: #222;
   -webkit-box-flex:1;
   display: block;
+  height: 1px;
   width: 32%;
-  height: calc(70vw * 0.36 / 5 / 1.5);
+  margin-top:10px;
 }
 .ccbike__span_additional-information{
   -webkit-box-flex:1;
