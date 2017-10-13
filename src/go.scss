@@ -123,6 +123,16 @@ $ccBikeColor:#13937f;
 }
 .go__screenshot li img{
 }
+.ccbike__screenshot_base-go{
+  height: 490px;
+}
+.ccbike__ul{
+  width: 1000px !important;
+  height: auto !important;
+}
+.ccbike__ul li{
+  width: 230px;
+}
 .go__introduce{
   margin-top: 20px;
   padding: 0 12px;
@@ -156,6 +166,10 @@ footer{
 .go__footer-a_download{
   margin-bottom: 30px;
   background: #ff7e3b;
+}
+.ccbike__footer-a_download{
+  margin-bottom: 30px;
+  background: #25e3c5;
 }
 
 
