@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>download | 程程单车</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="author" content="Thilina Fong" />
+<meta name="description" content="" />
+<style media="screen">
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+article,aside,body,details,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,input,li,menu,nav,ol,p,section,select,textarea,ul {
+  font-family:"微软雅黑",Ubuntu,Arial,"libra sans",sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+ /*load 10*/
+.k-bar{
+  float:left;
+  width:15px;
+  height:6px;
+  border-radius:2px;
+  background-color:#EEE;
+}
+.k-bar{
+  -webkit-animation: k-loadingJ 2s cubic-bezier(.17,.37,.43,.67) infinite;
+  animation: k-loadingJ 2s cubic-bezier(.17,.37,.43,.67) infinite;
+}
+@-webkit-keyframes k-loadingJ {
+  0%,100%{
+    -webkit-transform:translate(0,0);
+  }
+  50%{
+    -webkit-transform:translate(80px,0);
+    background-color:#A13A00;
+    width:25px;
+  }
+}
+@keyframes k-loadingJ {
+  0%,100%{
+    transform:translate(0,0);
+  }
+  50%{
+    transform:translate(80px,0);
+    background-color:#A13A00;
+    width:25px;
+  }
+}
+.go-load-10{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:#222;
+  z-index: 99;
+}
+.go-load-10__k-bar{
+  margin-top: 44vh;
+  margin-left: calc((100% - 85px)/2);
+}
+</style>
+</head>
+<body>
+  <!-- 預加載動畫 -->
+<div class="load-10 go-load-10">
+  <div class="k-bar go-load-10__k-bar"></div>
+</div>
+<div id="immotor" class="go">
+  <div class="go__first-screen">
+    <h1 class="ccbike__h1_logo">
+      <!-- <img src="" alt="logo-immotor" /> -->
+      <mark class="go__mark_logo">程程单车</mark>
+    </h1>
+    <div class="go__go-bg">
+      <h2 class="go__h2_slogan">领航绿色出行新方式</h2>
+      <div class="ccbike__additional-information">
+        <span class="ccbike__center-line"></span>
+        <span class="ccbike__span_additional-information">省时又省力</span>
+        <span class="ccbike__center-line"></span>
+      </div>
+      <p class="go__version">最新版本：V1.0.3 | 更新日期：2017-10-12</p>
+      <!-- <a class="go__a_download" href="http://mp.weixin.qq.com/mp/redirect?url=http://192.168.2.13/ili/dist/files_for_download/com.sina.weibolite_1.0.0_1792.apk#weixin.qq.com#wechat_redirect">立即下载</a> -->
+      <!-- <a class="js--go-and-ccbike__a_download ccbike__a_download" href="./files_for_download/com.sina.weibolite_1.0.0_1792.apk">立即下载</a> -->
+    </div>
+  </div>
+  <div class="go__screen">
+    <div class="go__screenshot ccbike__screenshot_base-go">
+      <ul class="clearfix ccbike__ul">
+        <li>
+          <img src="screenshot/ccbike/0.png" alt="软件截图1" />
+        </li>
+        <li>
+          <img src="screenshot/ccbike/1.png" alt="软件截图2" />
+        </li>
+        <li>
+          <img src="screenshot/ccbike/2.png" alt="软件截图3" />
+        </li>
+        <li>
+          <img src="screenshot/ccbike/3.png" alt="软件截图4" />
+        </li>
+      </ul>
+    </div>
+    <div class="go__introduce">
+      <p class="ccbike__out">还在骑传统自行车？ 你out了。骑程程助力单车省时又省力。它采用易马达精心打造的超级电池供电，低碳环保。领航绿色出行新方式！</p>
+      <p>超级电池荣获了包括爱迪生发明奖在内的诸多国际大奖， 他采用模块化设计，内置智能芯片，实时搜集电池数据并上传云端进行分析，非常安全和智能。超级电池不仅可以给助力单车供电，还能为您的手机，电脑等小型设备进行充电。您可以把它当成您的超级充电宝。</p>
+      <p>程程单车 APP专门为程程助力单车和易马达超级电池研发设计。通过它您可以：</p>
+      <ul class="ccbike__can">
+        <li>1.发现周边的换电站;</li>
+        <li>2.进行超级电池的租赁和归还;</li>
+        <li>3.发现周边的助力单车;</li>
+        <li>4.进行助力单车的租赁和归还;</li>
+        <li>5.分析计算您的行程轨迹;</li>
+        <li>6.以及其他有趣的功能;</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <a class="js--go-and-ccbike__a_download ccbike__a_download ccbike__footer-a_download" href="./files_for_download/com.sina.weibolite_1.0.0_1792.apk">立即下载</a>
+    Copyright ©2017 Immotor. All Rights Reserved.<br />
+    深圳易马达科技有限公司 版权所有
+  </footer>
+</div>
+<!-- build:script -->
+<script src="bundle.js" charset="utf-8"></script>
+<!-- endbuild -->
+</body>
+</html>
