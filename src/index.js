@@ -34,12 +34,15 @@ window.onload=function(){
   //   loadHtml();
   //   loadStyleText(cssText);
   // }
-  //===微信下載
+  //===微信下載  global
+  var strUrlApk='https://imgcn.immotor.com/ebike/android/ccbike-1.0.1(2017-10-16).apk';
   var elesDownloadBtnA=document.querySelectorAll('.js--go-and-ccbike__a_download');
   for(var i=0;i<elesDownloadBtnA.length;i++){
     // http://mp.weixin.qq.com/mp/redirect?url=http://192.168.2.13/ili/dist/files_for_download/com.sina.weibolite_1.0.0_1792.apk#weixin.qq.com#wechat_redirect
     if(is_weixin()){
-      elesDownloadBtnA[i].href='http://mp.weixin.qq.com/mp/redirect?url=http://192.168.2.13/ili/dist/files_for_download/com.sina.weibolite_1.0.0_1792.apk#weixin.qq.com#wechat_redirect';
+      elesDownloadBtnA[i].href='http://mp.weixin.qq.com/mp/redirect?url='+strUrlApk+'#weixin.qq.com#wechat_redirect';
+    }else{
+      elesDownloadBtnA[i].href=strUrlApk;
     }
     elesDownloadBtnA[i].onclick=function(ev){
       if(is_weixin()){
