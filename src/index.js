@@ -54,9 +54,16 @@ window.onload=function(){
   function whenLoadComplete(){
     document.querySelector('.go-load-10').style.display='none';
   }
+  function alterScreenshotSrcs(){
+    var elesImg=document.querySelectorAll('.go__screenshot img');
+    for(var i=0;i<elesImg.length;i++){
+      elesImg[i].src='screenshot/ccbike/'+i+'.png';
+    }
+  }
   window.setTimeout(function(){
     whenLoadComplete();
-  },1100);
+    alterScreenshotSrcs();
+  },0);
 };
 
 
